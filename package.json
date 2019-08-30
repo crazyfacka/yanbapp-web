@@ -1,0 +1,31 @@
+{
+  "name": "yanbapp-web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "nginx-win": "@powershell -NoProfile -ExecutionPolicy Unrestricted -Command ./dev/start-dev.ps1",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build-dev": "vue-cli-service build --mode=development",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "dependencies": {
+    "vue": "^2.5.22",
+    "vue-cookie": "^1.1.4",
+    "vue-router": "^3.0.2",
+    "vuex": "^3.1.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.3.0",
+    "@vue/cli-plugin-eslint": "^3.3.0",
+    "@vue/cli-plugin-unit-mocha": "^3.3.0",
+    "@vue/cli-service": "^3.3.0",
+    "@vue/eslint-config-airbnb": "^3.0.5",
+    "@vue/test-utils": "^1.0.0-beta.28",
+    "chai": "^4.2.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-template-compiler": "^2.5.22"
+  }
+}
